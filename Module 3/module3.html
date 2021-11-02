@@ -22,6 +22,10 @@
         color: white;
         text-align: center;
     }
+    
+    form {
+        color: white;
+    }
 </style>
 
 <body>
@@ -91,6 +95,27 @@
         </tr>
 
     </table>
+
+    <br>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">E-mail address:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="departure">Departure date:</label>
+        <input type="date" id="departure" name="departure">
+        <br>
+        <label for="city">Destination city:</label>
+        <input type="text" id="city" name="city">
+        <br>
+        <label for="no-of-passengers">Number of passengers:</label>
+        <input type="number" id="no-of-passengers" name="no-of-passengers">
+        <br>
+        <button type="button" onclick="alert('Hello World!')">Submit</button>
+    </form>
 
 </body>
 
