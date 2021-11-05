@@ -18,6 +18,21 @@
         border: 1px solid white;
         border-radius: 10px;
     }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 30%;
+        padding: 0px;
+        border: 0px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 </style>
 
 <body>
@@ -57,51 +72,58 @@
         </tr>
     </table>
 
-    <br>
+    <div class="row">
 
-    <h3>Submit form using GET method:</h3>
+        <div class="column">
+            <h3>Submit form using GET method:</h3>
 
-    <form action="https://webdevbasics.net/scripts/demo.php" method="GET">
-        <label for="name">Name:</label>
-        <input type="text" id="name-get" name="name">
-        <br>
-        <label for="email">E-mail address:</label>
-        <input type="email" id="email-get" name="email">
-        <br>
-        <label for="departure">Departure date:</label>
-        <input type="date" id="departure-get" name="departure">
-        <br>
-        <label for="city">Destination city:</label>
-        <input type="text" id="city-get" name="city">
-        <br>
-        <label for="no-of-passengers">Number of passengers:</label>
-        <input type="number" id="no-of-passengers-get" name="no-of-passengers">
-        <br>
-        <button type="submit">Submit</button>
-    </form>
+            <form action="https://webdevbasics.net/scripts/demo.php" method="GET">
+                <label for="name">Name:</label>
+                <input type="text" id="name-get" name="name">
+                <br>
+                <label for="email">E-mail address:</label>
+                <input type="email" id="email-get" name="email">
+                <br>
+                <label for="departure">Departure date:</label>
+                <input type="date" id="departure-get" name="departure">
+                <br>
+                <label for="city">Destination city:</label>
+                <input type="text" id="city-get" name="city">
+                <br>
+                <label for="no-of-passengers">Number of passengers:</label>
+                <input type="number" id="no-of-passengers-get" name="no-of-passengers">
+                <br>
+                <button type="submit">Submit</button>
+            </form>
 
-    <br>
+        </div>
 
-    <h3>Submit form using POST method:</h3>
+        <div class="column">
 
-    <form action="https://webdevbasics.net/scripts/demo.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name-post" name="name">
-        <br>
-        <label for="email">E-mail address:</label>
-        <input type="email" id="email-post" name="email">
-        <br>
-        <label for="departure">Departure date:</label>
-        <input type="date" id="departure-post" name="departure">
-        <br>
-        <label for="city">Destination city:</label>
-        <input type="text" id="city-post" name="city">
-        <br>
-        <label for="no-of-passengers">Number of passengers:</label>
-        <input type="number" id="no-of-passengers-post" name="no-of-passengers">
-        <br>
-        <button type="submit">Submit</button>
-    </form>
+            <h3>Submit form using POST method:</h3>
+
+            <form action="https://webdevbasics.net/scripts/demo.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name-post" name="name">
+                <br>
+                <label for="email">E-mail address:</label>
+                <input type="email" id="email-post" name="email">
+                <br>
+                <label for="departure">Departure date:</label>
+                <input type="date" id="departure-post" name="departure">
+                <br>
+                <label for="city">Destination city:</label>
+                <input type="text" id="city-post" name="city">
+                <br>
+                <label for="no-of-passengers">Number of passengers:</label>
+                <input type="number" id="no-of-passengers-post" name="no-of-passengers">
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
 
 </body>
 
