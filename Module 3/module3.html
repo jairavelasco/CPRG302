@@ -6,6 +6,10 @@
         color: white;
     }
     
+    h2 {
+        text-align: center;
+    }
+    
     table {
         width: 80%;
         text-align: center;
@@ -18,16 +22,16 @@
         border: 1px solid white;
         border-radius: 10px;
     }
-
     /* Create two equal columns that floats next to each other */
+    
     .column {
         float: left;
         width: 30%;
         padding: 0px;
         border: 0px;
     }
-
     /* Clear floats after the columns */
+    
     .row:after {
         content: "";
         display: table;
@@ -40,6 +44,7 @@
     <h2>
         Welcome to Jaira Velasco's Travel and Tour!
     </h2>
+    <br>
 
     <table>
         <tr>
@@ -78,22 +83,23 @@
             <h3>Submit form using GET method:</h3>
 
             <form action="https://webdevbasics.net/scripts/demo.php" method="GET">
-                <label for="name">Name:</label>
-                <input type="text" id="name-get" name="name">
+                <label for="Name">Name:</label>
+                <input type="text" id="name-get" name="Name">
                 <br>
-                <label for="email">E-mail address:</label>
-                <input type="email" id="email-get" name="email">
+                <label for="E-mail address">E-mail address:</label>
+                <input type="email" id="email-get" name="E-mail address">
                 <br>
-                <label for="departure">Departure date:</label>
-                <input type="date" id="departure-get" name="departure">
+                <label for="Departure date">Departure date:</label>
+                <input type="date" id="departure-get" name="Departure date">
                 <br>
-                <label for="city">Destination city:</label>
-                <input type="text" id="city-get" name="city">
+                <label for="Destination city">Destination city:</label>
+                <input type="text" id="city-get" name="Destination city">
                 <br>
                 <label for="no-of-passengers">Number of passengers:</label>
                 <input type="number" id="no-of-passengers-get" name="no-of-passengers">
                 <br>
-                <button type="submit">Submit</button>
+                <button type="submit" class="btn btn-primary" style="background-color:rgb(21, 232, 247);">Submit</button>
+
             </form>
 
         </div>
@@ -103,22 +109,22 @@
             <h3>Submit form using POST method:</h3>
 
             <form action="https://webdevbasics.net/scripts/demo.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name-post" name="name">
+                <label for="Name">Name:</label>
+                <input type="text" id="name-post" name="Name">
                 <br>
-                <label for="email">E-mail address:</label>
-                <input type="email" id="email-post" name="email">
+                <label for="E-mail address">E-mail address:</label>
+                <input type="email" id="email-post" name="E-mail address">
                 <br>
-                <label for="departure">Departure date:</label>
-                <input type="date" id="departure-post" name="departure">
+                <label for="Departure date">Departure date:</label>
+                <input type="date" id="departure-post" name="Departure date">
                 <br>
-                <label for="city">Destination city:</label>
-                <input type="text" id="city-post" name="city">
+                <label for="Destination city">Destination city:</label>
+                <input type="text" id="city-post" name="Destination city">
                 <br>
                 <label for="no-of-passengers">Number of passengers:</label>
                 <input type="number" id="no-of-passengers-post" name="no-of-passengers">
                 <br>
-                <button type="submit">Submit</button>
+                <button type="submit" class="btn btn-primary" style="background-color:rgb(4, 222, 238);">Submit</button>
             </form>
 
         </div>
