@@ -1,50 +1,72 @@
-body {
-    background-image: url('pink.jpg');
-}
-
-h1 {
-    color: Black;
-    font-size: xx-large;
-    text-align: center;
-}
-
-form {
-    color: black;
-    text-align: center;
-    font-size: x-large;
-}
-
-h2 {
-    color: black;
-}
-
-h3 {
-    color: black;
-    font-size: x-large;
-}
-
-ul {
-    color: black;
-}
-
-li {
-    font-weight: bold;
-}
-
-p {
-    color: black;
-    font-weight: bold;
-    font-size: large;
-}
-
-#div1 {
-    width: 350px;
-    height: 300px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
-}
-
-button {
-    background-color: turquoise;
-    text-align: center;
-}
+    body {
+        background-image: url('pink.jpg');
+    }
+    
+    h1 {
+        color: black;
+        font-size: xx-large;
+        text-align: center;
+    }
+    
+    form {
+        color: black;
+        text-align: center;
+        font-size: x-large;
+    }
+    
+    h2 {
+        color: black;
+        font-size: xx-large;
+        text-align: center;
+    }
+    
+    h3 {
+        color: black;
+        font-size: xx-large;
+        text-align: center;
+    }
+    
+    ul {
+        color: black;
+        display: table;
+        margin: 0 auto;
+        font-size: x-large;
+    }
+    
+    li {
+        font-weight: bold;
+    }
+    
+    p {
+        color: firebrick;
+        font-weight: bold;
+        font-size: x-large;
+        text-align: left;
+    }
+    
+    #div1 {
+        width: 350px;
+        height: 300px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+    }
+    
+    button {
+        background-color: turquoise;
+        text-align: center;
+    }
+    
+    .container {
+        height: 100px;
+        position: relative;
+        border: 3px solid purple;
+    }
+    
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
