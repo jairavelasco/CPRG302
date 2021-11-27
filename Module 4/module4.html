@@ -9,9 +9,6 @@
 </head>
 
 <body>
-    <iframe width="420" height="315" src="https://www.ibm.com/cloud/learn/what-is-artificial-intelligence">
-    </iframe>
-
     <h1>Welcome to Jaira Velasco's Survey!</h1>
 
     <div class="column">
@@ -31,26 +28,25 @@
     </div>
 
     <h2>Local Storage:</h2>
-
-    <ul id="localStorage">
-
-    </ul>
+    <ul id="localStorage"></ul>
 
     <h3>Session Storage:</h3>
+    <ul id="sessionStorage"></ul>
 
-    <ul id="sessionStorage">
+    <hr>
 
-    </ul>
-    <p>Where is my location?</p>
+    <p>Geolocation API</p>
     <div class="container">
         <div class="center">
 
-            <button onclick="getLocation()">Locate your location</button>
+            <button onclick="getLocation()">Check your location</button>
         </div>
     </div>
 
     <p id="demo"></p>
     <div id="result"></div>
+
+    <hr>
 
     <p>Drag the bouquet image into the rectangle:</p>
 
@@ -58,10 +54,15 @@
     <br>
     <img id="drag1" src="rose.jpg" draggable="true" ondragstart="drag(event)" width="336" height="300">
 
+    <hr>
+
+    <p>Iframe</p>
+
+    <iframe width="420" height="315" src="https://www.ibm.com/cloud/learn/what-is-artificial-intelligence">
+    </iframe>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script src="module4.js"></script>
-
 </body>
 
 </html>
