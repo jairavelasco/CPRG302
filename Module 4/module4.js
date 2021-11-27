@@ -23,7 +23,6 @@ for (var i = 0; i < sessionStorage.length; i++) {
     $("#sessionStorage").append("<li>" + name + "</li>");
     $("#sessionStorage li:eq(" + i + ")").css("color", color);
 }
-
 var x = document.getElementById("demo");
 
 function getLocation() {

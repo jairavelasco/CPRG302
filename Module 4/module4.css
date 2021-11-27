@@ -51,6 +51,16 @@
         border: 1px solid #aaaaaa;
     }
     
+    #div1,
+    #div2 {
+        float: left;
+        width: 600px;
+        height: 300px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid fuchsia;
+    }
+    
     button {
         background-color: turquoise;
         text-align: center;
