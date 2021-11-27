@@ -1,15 +1,4 @@
-function submitForm(event) {
-    console.log(event.submitter.name);
-    var name = event.target.elements.name.value;
-    var color = event.target.elements.color.value;
-
-    if (event.submitter.name == "btnLocal") {
-        localStorage.setItem(name, color);
-
-    } else if (event.submitter.name == "btnSession") {
-        sessionStorage.setItem(name, color);
-    }
-}
+// Display contents of local and session storage.
 for (var i = 0; i < localStorage.length; i++) {
     var name = localStorage.key(i);
     var color = localStorage.getItem(name);
@@ -23,6 +12,24 @@ for (var i = 0; i < sessionStorage.length; i++) {
     $("#sessionStorage").append("<li>" + name + "</li>");
     $("#sessionStorage li:eq(" + i + ")").css("color", color);
 }
+
+// submitForm saves the contents of the submitted form
+// to the local or session storage.
+function submitForm(event) {
+    console.log(event.submitter.name);
+    var name = event.target.elements.name.value;
+    var color = event.target.elements.color.value;
+
+    if (event.submitter.name == "btnLocal") {
+        localStorage.setItem(name, color);
+
+    } else if (event.submitter.name == "btnSession") {
+        sessionStorage.setItem(name, color);
+    }
+}
+
+
+// Geolocation API
 var x = document.getElementById("demo");
 
 function getLocation() {
@@ -38,6 +45,7 @@ function showPosition(position) {
         "<br>Longitude: " + position.coords.longitude;
 }
 
+// Drag/drop
 function allowDrop(ev) {
     ev.preventDefault();
 }
